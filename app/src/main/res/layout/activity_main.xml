@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_text1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context="com.example.amir.ende_crypt.MainActivity">
+
+    <EditText
+        android:id="@+id/ed_encrytxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="22dp"
+        android:allowUndo="false"
+        android:ems="10"
+        android:hint="Encry_Text"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/btncon"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ed_encrytxt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="convert"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/ed_enkey2"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/ed_dectxt5"
+        android:layout_alignTop="@+id/ed_encrytxt1"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="En_key"
+        android:inputType="number"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/ed_urentxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Ur_EnText"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/btncon"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/ed_dectxt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Decry_Text"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:layout_above="@+id/btnrvt"
+        android:layout_alignStart="@+id/btnrvt" />
+
+    <Button
+        android:id="@+id/btnrvt"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Revert"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/ed_dkey4"
+        android:layout_alignEnd="@+id/ed_encrytxt1" />
+
+    <EditText
+        android:id="@+id/ed_dkey4"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ed_urentxt3"
+        android:layout_marginTop="75dp"
+        android:layout_toStartOf="@+id/ed_urentxt3"
+        android:ems="10"
+        android:hint="De_key"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/ed_or6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnrvt"
+        android:layout_marginTop="29dp"
+        android:layout_toEndOf="@+id/ed_dkey4"
+        android:ems="10"
+        android:hint="Orgn_Txt"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark" />
+
+</RelativeLayout>
